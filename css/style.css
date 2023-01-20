@@ -2,7 +2,7 @@
     --color-primary: hsl(228, 12%, 48%);
     --color-secondary: hsl(212, 21%, 14%);
     --color-tertiary: hsl(158, 36%, 37%);
-    --color-neutral: hsl(0, 0%, 100%)
+    --color-neutral: hsl(0, 0%, 100%);
 
     --button-background-color: var(--color-tertiary);
     --button-color: var(--color-neutral);
@@ -10,6 +10,8 @@
     --paragraph-color: var(--color-primary);
     --heading-color: var(--color-secondary);
     --background-color: var(--color-neutral);
+    --footer-color: var(--color-neutral);
+    --footer-background-color: var(--color-secondary);
 
     --font-family-primary: "Montserrat", sans-serif;
     --font-family-accent: "Fraunces", serif;
@@ -28,9 +30,24 @@
 body {
     font-family: var(--font-family-body);
     font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    
+    background-color: var(--background-color);
+    
+    /* allowing the footer to be at the bottom */
+    display: flex;
+    flex-direction: column;
 }
 
+footer{
+    margin-top: auto;
 
+    text-align: center;
+    letter-spacing: 0.15rem;
+
+    background-color: var(--footer-background-color);
+    color: var(--footer-color);
+}
 
 
 
