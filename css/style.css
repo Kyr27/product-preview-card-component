@@ -58,7 +58,7 @@ footer {
   /* max-width: 375px; */
 
   padding: 20px;
-  margin: 0 auto;
+  margin-inline: auto;
 
   display: flex;
   flex-direction: column;
