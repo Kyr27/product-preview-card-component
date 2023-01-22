@@ -1,16 +1,18 @@
-:root{
+:root {
     /* ! Do not use these directly */
     --_color-primary:     hsl(0, 0%, 100%); 
     --_color-secondary:   hsl(212, 21%, 14%);
     --_color-tertiary:    hsl(158, 36%, 37%);
     --_color-quaternary:  hsl(228, 12%, 48%);
+    --_color-quinary:     hsl(30, 38%, 92%);
 
     --color-button-background:  var(--_color-tertiary);
     --color-button-text:        var(--_color-primary);
     --color-price-label:        var(--_color-tertiary);
     --color-body-text:          var(--_color-quaternary);
     --color-heading-text:       var(--_color-secondary);
-    --color-page-background:    var(--_color-primary);
+    --color-page-background:    var(--_color-quinary);
+    --color-card-background:    var(--_color-primary);
     --color-footer-text:        var(--_color-primary);
     --color-footer-background:  var(--_color-secondary);
 
@@ -24,15 +26,16 @@
     --font-weight-regular: 500;
     --font-weight-bold: 700;
 
-    --font-size-body: 0.875rem;
-    /* --font-size-heading: ; */
+    --font-size-body: 0.875rem;     /* 14px */
+    --font-size-heading: 2rem;      /* 32px */
 }
 
 body {
     font-family: var(--font-family-body);
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-regular);
-    
+
+    color: var(--color-body-text);
     background-color: var(--color-page-background);
     
     /* allowing the footer to be at the bottom */
@@ -40,7 +43,7 @@ body {
     flex-direction: column;
 }
 
-footer{
+footer {
     margin-top: auto;
 
     text-align: center;
@@ -50,8 +53,89 @@ footer{
     color: var(--color-footer-text);
 }
 
+.container {
+  min-width: 375px;
+  /* max-width: 375px; */
 
+  padding: 20px;
+  margin: 0 auto;
 
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card {
+  padding: 1.5em;
+  text-align: left;
+  flex-basis: 50%;
+
+  border-radius: 0 0 1em 1em;
+
+  background-color: var(--color-card-background);
+}
+
+.card-image {
+  flex-basis: 50%;
+}
+
+.card-image img{
+  background-size: cover;
+  min-height: 100%;
+  border-radius: 1em 1em 0 0;
+}
+
+.card-category {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 0.8rem;
+}
+
+.card-header {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-family: var(--font-family-accent);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-heading);
+  color: var(--color-heading-text);
+  line-height: 1.1;
+}
+
+.card-footer {
+  margin-top: 2rem;
+}
+
+.add-to-cart {
+  width: 100%;
+
+  padding: 0.6em;
+  margin-top: 1em;
+
+  font-size: var(--font-weight-bold);
+
+  background-color: var(--color-button-background);
+  color: var(--color-button-text);
+  border-radius: 0.5em;
+}
+
+@media (min-width: 475px){
+  .container{
+    flex-direction: row;
+    max-width: 575px;
+  }
+
+  .card{
+    border-radius: 0 1em 1em 0;
+  }
+
+  .card-image img{
+    content: url(../images/image-product-desktop.jpg);
+    border-radius: 1em 0 0 1em;
+  }
+}
 
 
 
