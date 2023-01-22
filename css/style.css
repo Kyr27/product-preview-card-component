@@ -1,24 +1,25 @@
 :root{
-    --color-primary: hsl(228, 12%, 48%);
-    --color-secondary: hsl(212, 21%, 14%);
-    --color-tertiary: hsl(158, 36%, 37%);
-    --color-neutral: hsl(0, 0%, 100%);
+    /* ! Do not use these directly */
+    --_color-primary:     hsl(0, 0%, 100%); 
+    --_color-secondary:   hsl(212, 21%, 14%);
+    --_color-tertiary:    hsl(158, 36%, 37%);
+    --_color-quaternary:  hsl(228, 12%, 48%);
 
-    --button-background-color: var(--color-tertiary);
-    --button-color: var(--color-neutral);
-    --price-tag-color: var(--color-tertiary);
-    --paragraph-color: var(--color-primary);
-    --heading-color: var(--color-secondary);
-    --background-color: var(--color-neutral);
-    --footer-color: var(--color-neutral);
-    --footer-background-color: var(--color-secondary);
+    --color-button-background:  var(--_color-tertiary);
+    --color-button-text:        var(--_color-primary);
+    --color-price-label:        var(--_color-tertiary);
+    --color-body-text:          var(--_color-quaternary);
+    --color-heading-text:       var(--_color-secondary);
+    --color-page-background:    var(--_color-primary);
+    --color-footer-text:        var(--_color-primary);
+    --color-footer-background:  var(--_color-secondary);
 
     --font-family-primary: "Montserrat", sans-serif;
     --font-family-accent: "Fraunces", serif;
 
-    --font-family-body: var(--font-family-primary);
+    --font-family-body:     var(--font-family-primary);
     --font-family-heading:  var(--font-family-accent);
-    --font-family-button: var(--font-family-accent);
+    --font-family-button:   var(--font-family-accent);
 
     --font-weight-regular: 500;
     --font-weight-bold: 700;
@@ -32,7 +33,7 @@ body {
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-regular);
     
-    background-color: var(--background-color);
+    background-color: var(--color-page-background);
     
     /* allowing the footer to be at the bottom */
     display: flex;
@@ -45,8 +46,8 @@ footer{
     text-align: center;
     letter-spacing: 0.15rem;
 
-    background-color: var(--footer-background-color);
-    color: var(--footer-color);
+    background-color: var(--color-footer-background);
+    color: var(--color-footer-text);
 }
 
 
