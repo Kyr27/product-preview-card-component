@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Product preview card" />
+    <meta
+      name="description"
+      content="Product preview card with ARIA, semantic html, CSS custom properties and Flex"
+    />
 
     <link
       rel="icon"
@@ -27,21 +30,29 @@
     <main>
       <div class="container">
         <div class="card-image">
-          <img src="images/image-product-mobile.jpg" alt="Image of floral perfume laying on its side on white background amongst leaves" />
+          <img
+            src="images/image-product-mobile.jpg"
+            alt="Image of floral perfume laying on its side on white background amongst leaves"
+          />
         </div>
         <div class="card">
           <div class="card-header">
-            <p class="card-category">Perfume</p>
-            <p class="card-title">Gabrielle Essence Eau De Parfum</p>
+            <p class="card-category" aria-label="Product category">Perfume</p>
+            <p class="card-title" aria-label="Product title">
+              Gabrielle Essence Eau De Parfum
+            </p>
           </div>
           <div class="card-body">
-            <p class="card-description">
+            <p class="card-description" aria-label="Product description">
               A floral, solar and voluptuous interpretation composed by Olivier
               Polge, Perfumer-Creator for the House of CHANEL.
             </p>
           </div>
           <div class="card-footer">
-            <p class="card-price">$149.99<span class="card-old-price">$169.99</span></p>
+            <p class="card-price" aria-label="Current price">
+              $149.99<span class="card-old-price" aria-label="Old price">
+                $169.99</span>
+            </p>
             <button class="add-to-cart">Add to Cart</button>
           </div>
         </div>
