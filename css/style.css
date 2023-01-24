@@ -6,16 +6,17 @@
     --_color-quaternary:  hsl(228, 12%, 48%);
     --_color-quinary:     hsl(30, 38%, 92%);
 
-    --color-button-background:  var(--_color-tertiary);
-    --color-button-text:        var(--_color-primary);
-    --color-price-label:        var(--_color-tertiary);
-    --color-price-old:          var(--_color-quaternary);
-    --color-body-text:          var(--_color-quaternary);
-    --color-heading-text:       var(--_color-secondary);
-    --color-page-background:    var(--_color-quinary);
-    --color-product-background:    var(--_color-primary);
-    --color-footer-text:        var(--_color-primary);
-    --color-footer-background:  var(--_color-secondary);
+    --color-button-background:        var(--_color-tertiary);
+    --color-button-active-background: var(--_color-secondary);
+    --color-button-text:              var(--_color-primary);
+    --color-price-label:              var(--_color-tertiary);
+    --color-price-old:                var(--_color-quaternary);
+    --color-body-text:                var(--_color-quaternary);
+    --color-heading-text:             var(--_color-secondary);
+    --color-page-background:          var(--_color-quinary);
+    --color-product-background:       var(--_color-primary);
+    --color-footer-text:              var(--_color-primary);
+    --color-footer-background:        var(--_color-secondary);
 
     --font-family-primary: "Montserrat", sans-serif;
     --font-family-accent: "Fraunces", serif;
@@ -144,6 +145,10 @@ footer {
   background-color: var(--color-button-background);
   color: var(--color-button-text);
   border-radius: 0.7em;
+}
+
+.add-to-cart:is(:hover, :focus){
+  background-color: var(--color-button-active-background);
 }
 
 @media only screen and (min-width: 39.375rem) {
