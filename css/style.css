@@ -43,10 +43,17 @@ body {
 
     color: var(--color-body-text);
     background-color: var(--color-page-background);
-    
-    /* allowing the footer to be at the bottom */
-    display: flex;
-    flex-direction: column;
+}
+
+body,
+.container,
+.card-price {
+  display: flex
+}
+
+body,
+.container {
+  flex-direction: column;
 }
 
 footer {
@@ -65,10 +72,6 @@ footer {
 
   padding: 1.25em;   /* 20px */
   margin-inline: auto;
-
-  display: flex;
-  flex-direction: column;
-
 }
 
 .card {
@@ -115,8 +118,6 @@ footer {
 }
 
 .card-price{
-  display: flex;
-
   font-size: var(--font-size-heading);
   font-family: var(--font-family-price);
 
