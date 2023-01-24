@@ -9,6 +9,7 @@
     --color-button-background:  var(--_color-tertiary);
     --color-button-text:        var(--_color-primary);
     --color-price-label:        var(--_color-tertiary);
+    --color-price-old:          var(--_color-quaternary);
     --color-body-text:          var(--_color-quaternary);
     --color-heading-text:       var(--_color-secondary);
     --color-page-background:    var(--_color-quinary);
@@ -21,7 +22,7 @@
 
     --font-family-body:     var(--font-family-primary);
     --font-family-heading:  var(--font-family-accent);
-    --font-family-button:   var(--font-family-accent);
+    --font-family-price:    var(--font-family-accent);
 
     --font-weight-regular: 500;
     --font-weight-bold: 700;
@@ -108,6 +109,24 @@ footer {
   margin-top: 2rem;
 }
 
+.card-price{
+  display: flex;
+
+  font-size: var(--font-size-heading);
+  font-family: var(--font-family-price);
+
+  color: var(--color-price-label);
+}
+
+.card-old-price{
+  text-decoration: line-through;
+
+  color: var(--color-price-old);
+  font-size: var(--font-size-body);
+
+  margin: 0.8125rem 0 0 2em;
+}
+
 .add-to-cart {
   width: 100%;
 
@@ -136,7 +155,6 @@ footer {
     border-radius: 1em 0 0 1em;
   }
 }
-
 
 
 
