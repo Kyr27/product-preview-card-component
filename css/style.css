@@ -29,6 +29,11 @@
 
     --font-size-body: 0.875rem;     /* 14px */
     --font-size-heading: 2rem;      /* 32px */
+
+    --card-mobile-width: 23.4375rem;  /* 375px */
+
+    /* ! Not possible as media query declarations currently do not support vars */
+    /* --card-desktop-width: 39.375rem;  */
 }
 
 body {
@@ -55,8 +60,8 @@ footer {
 }
 
 .container {
-  min-width: 23.4375rem;  /* 375px */
-  max-width: 23.4375rem;
+  min-width: var(--card-mobile-width);
+  max-width: var(--card-mobile-width);
 
   padding: 1.25em;   /* 20px */
   margin-inline: auto;
@@ -140,7 +145,7 @@ footer {
   border-radius: 0.7em;
 }
 
-@media (min-width: 39.375rem){
+@media only screen and (min-width: 39.375rem) {
   .container{
     flex-direction: row;
     max-width: 39.375rem; /* 630px */
