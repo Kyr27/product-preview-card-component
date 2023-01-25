@@ -15,8 +15,8 @@
     --color-heading-text:             var(--_color-secondary);
     --color-page-background:          var(--_color-quinary);
     --color-product-background:       var(--_color-primary);
-    --color-footer-text:              var(--_color-primary);
-    --color-footer-background:        var(--_color-secondary);
+    --color-attribution-text:              var(--_color-primary);
+    --color-attribution-background:        var(--_color-secondary);
 
     --font-family-primary: "Montserrat", sans-serif;
     --font-family-accent: "Fraunces", serif;
@@ -57,14 +57,14 @@ body,
   flex-direction: column;
 }
 
-footer {
+.attribution {
     margin-top: auto;
 
     text-align: center;
     letter-spacing: 0.15rem;
 
-    background-color: var(--color-footer-background);
-    color: var(--color-footer-text);
+    background-color: var(--color-attribution-background);
+    color: var(--color-attribution-text);
 }
 
 .product-container {
