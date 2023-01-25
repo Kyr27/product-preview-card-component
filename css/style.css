@@ -126,8 +126,6 @@ footer {
 }
 
 .product-old-price{
-  text-decoration: line-through;
-
   color: var(--color-price-old);
   font-size: var(--font-size-body);
 
