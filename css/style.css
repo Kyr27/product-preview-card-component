@@ -15,8 +15,8 @@
     --color-heading-text:             var(--_color-secondary);
     --color-page-background:          var(--_color-quinary);
     --color-product-background:       var(--_color-primary);
-    --color-attribution-text:              var(--_color-primary);
-    --color-attribution-background:        var(--_color-secondary);
+    --color-attribution-text:         var(--_color-primary);
+    --color-attribution-background:   var(--_color-secondary);
 
     --font-family-primary: "Montserrat", sans-serif;
     --font-family-accent: "Fraunces", serif;
@@ -118,6 +118,11 @@ body,
   margin-top: 2rem;
 }
 
+.product-price-container {
+  align-items: center;
+  gap: 1rem;
+}
+
 .product-price{
   font-size: var(--font-size-heading);
   font-family: var(--font-family-price);
@@ -129,7 +134,7 @@ body,
   color: var(--color-price-old);
   font-size: var(--font-size-body);
 
-  margin: 0.8125rem 0 0 2em;
+  /* margin: 0.8125rem 0 0 2em; */
 }
 
 .add-to-cart {
