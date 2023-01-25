@@ -145,31 +145,18 @@ footer {
   background-color: var(--color-button-background);
   color: var(--color-button-text);
   border-radius: 0.7em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .add-to-cart > img {
-  /* This is the default styling of the images, which is usually bad, but a must in these
-  kinds of situations, reseting it back to inline here as it was overriden by the CSS reset below */
-  display: inline;
-
   /* All of these work, but its worth noting that margin-inline offsets the text away from the image */
   /* margin-right: 0.5em; */
   /* margin-inline: 0.5em; */
   margin-inline-end: 0.5em;
 }
-
-/* You may think the span does not need vertical align middle, as its already in the middle, but there is a very
-slight difference between image middle and text middle that can be seen if you zoom in */
-.add-to-cart > img,
-.add-to-cart > span {
-  vertical-align: middle;
-}
-
-/* Issues with vertical alignment */
-/* .add-to-cart::before {
-  content: url(../images/icon-cart.svg);
-  padding-right: 1em;
-} */
 
 .add-to-cart:is(:hover, :focus){
   background-color: var(--color-button-active-background);
