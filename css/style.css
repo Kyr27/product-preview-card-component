@@ -160,6 +160,16 @@ footer {
   background-color: var(--color-button-active-background);
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
 @media only screen and (min-width: 39.375rem) {
   .product-container{
     flex-direction: row;
