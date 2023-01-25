@@ -48,7 +48,7 @@ body {
 
 body,
 .product-container,
-.product-price {
+.product-price-container {
   display: flex
 }
 
