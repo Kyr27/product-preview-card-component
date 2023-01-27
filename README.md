@@ -60,42 +60,52 @@ Users should be able to:
 ```css
 /* Might change this style in the future, as it would get too big for large projects */
 :root {
-    /* ! Do not use these directly */
-    --_color-primary:     hsl(0, 0%, 100%); 
-    --_color-secondary:   hsl(212, 21%, 14%);
-    --_color-tertiary:    hsl(158, 36%, 37%);
-    --_color-quaternary:  hsl(228, 12%, 48%);
-    --_color-quinary:     hsl(30, 38%, 92%);
+  /* ! Do not use these directly */
+  --_color-primary: hsl(0, 0%, 100%);
+  --_color-secondary: hsl(212, 21%, 14%);
+  --_color-tertiary: hsl(158, 36%, 37%);
+  --_color-quaternary: hsl(228, 12%, 48%);
+  --_color-quinary: hsl(30, 38%, 92%);
 
-    --color-button-background:        var(--_color-tertiary);
-    --color-button-active-background: var(--_color-secondary);
-    --color-button-text:              var(--_color-primary);
-    --color-price-label:              var(--_color-tertiary);
-    --color-price-old:                var(--_color-quaternary);
-    --color-body-text:                var(--_color-quaternary);
-    --color-heading-text:             var(--_color-secondary);
-    --color-page-background:          var(--_color-quinary);
-    --color-product-background:       var(--_color-primary);
-    --color-attribution-text:         var(--_color-primary);
-    --color-attribution-background:   var(--_color-secondary);
+  --color-button-background: var(--_color-tertiary);
+  --color-button-active-background: var(--_color-secondary);
+  --color-button-text: var(--_color-primary);
+  --color-price-label: var(--_color-tertiary);
+  --color-price-old: var(--_color-quaternary);
+  --color-body-text: var(--_color-quaternary);
+  --color-heading-text: var(--_color-secondary);
+  --color-page-background: var(--_color-quinary);
+  --color-product-background: var(--_color-primary);
+  --color-attribution-text: var(--_color-primary);
+  --color-attribution-background: var(--_color-secondary);
 
-    --font-family-primary: "Montserrat", sans-serif;
-    --font-family-accent: "Fraunces", serif;
+  --font-family-primary: "Montserrat", sans-serif;
+  --font-family-accent: "Fraunces", serif;
 
-    --font-family-body:     var(--font-family-primary);
-    --font-family-heading:  var(--font-family-accent);
-    --font-family-price:    var(--font-family-accent);
+  --font-family-body: var(--font-family-primary);
+  --font-family-heading: var(--font-family-accent);
+  --font-family-price: var(--font-family-accent);
 
-    --font-weight-regular: 500;
-    --font-weight-bold: 700;
+  --font-weight-regular: 500;
+  --font-weight-bold: 700;
 
-    --font-size-body: 0.875rem;     /* 14px */
-    --font-size-heading: 2rem;      /* 32px */
+  --font-size-body: 0.875rem; /* 14px */
+  --font-size-heading: 2rem; /* 32px */
 
-    --product-mobile-width: 23.4375rem;  /* 375px */
+  --product-mobile-width: 23.4375rem; /* 375px */
 
-    /* ! Not possible as media query declarations currently do not support vars(they will in the future) */
-    /* --product-desktop-width: 39.375rem;  */
+  /* ! Not possible as media query declarations currently do not support vars(they will in the future) */
+  /* --product-desktop-width: 39.375rem;  */
+
+  /* Center vertically and horizontally */
+  .product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin-inline: auto;
+  }
 }
 ```
 
