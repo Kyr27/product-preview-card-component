@@ -1,55 +1,55 @@
 :root {
-    /* ! Do not use these directly */
-    --_color-primary:     hsl(0, 0%, 100%); 
-    --_color-secondary:   hsl(212, 21%, 14%);
-    --_color-tertiary:    hsl(158, 36%, 37%);
-    --_color-quaternary:  hsl(228, 12%, 48%);
-    --_color-quinary:     hsl(30, 38%, 92%);
+  /* ! Do not use these directly */
+  --_color-primary: hsl(0, 0%, 100%);
+  --_color-secondary: hsl(212, 21%, 14%);
+  --_color-tertiary: hsl(158, 36%, 37%);
+  --_color-quaternary: hsl(228, 12%, 48%);
+  --_color-quinary: hsl(30, 38%, 92%);
 
-    --color-button-background:        var(--_color-tertiary);
-    --color-button-active-background: var(--_color-secondary);
-    --color-button-text:              var(--_color-primary);
-    --color-price-label:              var(--_color-tertiary);
-    --color-price-old:                var(--_color-quaternary);
-    --color-body-text:                var(--_color-quaternary);
-    --color-heading-text:             var(--_color-secondary);
-    --color-page-background:          var(--_color-quinary);
-    --color-product-background:       var(--_color-primary);
-    --color-attribution-text:         var(--_color-primary);
-    --color-attribution-background:   var(--_color-secondary);
+  --color-button-background: var(--_color-tertiary);
+  --color-button-active-background: var(--_color-secondary);
+  --color-button-text: var(--_color-primary);
+  --color-price-label: var(--_color-tertiary);
+  --color-price-old: var(--_color-quaternary);
+  --color-body-text: var(--_color-quaternary);
+  --color-heading-text: var(--_color-secondary);
+  --color-page-background: var(--_color-quinary);
+  --color-product-background: var(--_color-primary);
+  --color-attribution-text: var(--_color-primary);
+  --color-attribution-background: var(--_color-secondary);
 
-    --font-family-primary: "Montserrat", sans-serif;
-    --font-family-accent: "Fraunces", serif;
+  --font-family-primary: "Montserrat", sans-serif;
+  --font-family-accent: "Fraunces", serif;
 
-    --font-family-body:     var(--font-family-primary);
-    --font-family-heading:  var(--font-family-accent);
-    --font-family-price:    var(--font-family-accent);
+  --font-family-body: var(--font-family-primary);
+  --font-family-heading: var(--font-family-accent);
+  --font-family-price: var(--font-family-accent);
 
-    --font-weight-regular: 500;
-    --font-weight-bold: 700;
+  --font-weight-regular: 500;
+  --font-weight-bold: 700;
 
-    --font-size-body: 0.875rem;     /* 14px */
-    --font-size-heading: 2rem;      /* 32px */
+  --font-size-body: 0.875rem; /* 14px */
+  --font-size-heading: 2rem; /* 32px */
 
-    --product-mobile-width: 23.4375rem;  /* 375px */
+  --product-mobile-width: 23.4375rem; /* 375px */
 
-    /* ! Not possible as media query declarations currently do not support vars */
-    /* --product-desktop-width: 39.375rem;  */
+  /* ! Not possible as media query declarations currently do not support vars */
+  /* --product-desktop-width: 39.375rem;  */
 }
 
 body {
-    font-family: var(--font-family-body);
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
 
-    color: var(--color-body-text);
-    background-color: var(--color-page-background);
+  color: var(--color-body-text);
+  background-color: var(--color-page-background);
 }
 
 body,
 .product-container,
 .product-price-container {
-  display: flex
+  display: flex;
 }
 
 body,
@@ -58,13 +58,13 @@ body,
 }
 
 .attribution {
-    margin-top: auto;
+  margin-top: auto;
 
-    text-align: center;
-    letter-spacing: 0.15rem;
+  text-align: center;
+  letter-spacing: 0.15rem;
 
-    background-color: var(--color-attribution-background);
-    color: var(--color-attribution-text);
+  background-color: var(--color-attribution-background);
+  color: var(--color-attribution-text);
 }
 
 .product-container {
@@ -75,7 +75,7 @@ body,
   align-items: center;
   min-height: 100vh;
 
-  padding: 1.25em;   /* 20px */
+  padding: 1.25em; /* 20px */
   margin-inline: auto;
 }
 
@@ -93,7 +93,7 @@ body,
   flex-basis: 50%;
 }
 
-.product-image img{
+.product-image img {
   background-size: cover;
   min-height: 100%;
   border-radius: 1em 1em 0 0;
@@ -127,14 +127,14 @@ body,
   gap: 1rem;
 }
 
-.product-price{
+.product-price {
   font-size: var(--font-size-heading);
   font-family: var(--font-family-price);
 
   color: var(--color-price-label);
 }
 
-.product-old-price{
+.product-old-price {
   color: var(--color-price-old);
   font-size: var(--font-size-body);
 
@@ -165,36 +165,35 @@ body,
   margin-inline-end: 0.5em;
 }
 
-.add-to-cart:is(:hover, :focus){
+.add-to-cart:is(:hover, :focus) {
   background-color: var(--color-button-active-background);
 }
 
 .visually-hidden:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }
 
 @media only screen and (min-width: 39.375rem) {
-  .product-container{
+  .product-container {
     flex-direction: row;
     max-width: 39.375rem; /* 630px */
   }
 
-  .product{
+  .product {
     border-radius: 0 1em 1em 0;
   }
 
-  .product-image img{
+  .product-image img {
     content: url(../images/image-product-desktop.jpg);
     border-radius: 1em 0 0 1em;
   }
 }
-
 
 /* ------------------------------------------- */
 /* --------------   CSS Reset   -------------- */
@@ -222,8 +221,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -262,9 +261,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
