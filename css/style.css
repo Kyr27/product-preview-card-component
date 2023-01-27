@@ -71,6 +71,10 @@ body,
   min-width: var(--product-mobile-width);
   max-width: var(--product-mobile-width);
 
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
   padding: 1.25em;   /* 20px */
   margin-inline: auto;
 }
