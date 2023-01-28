@@ -94,10 +94,13 @@ Users should be able to:
 
   --product-mobile-width: 23.4375rem; /* 375px */
 
-  /* ! Not possible as media query declarations currently do not support vars(they will in the future) */
-  /* --product-desktop-width: 39.375rem;  */
+  /* Centers content of the body, the card in this case. */
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 
-  /* Center vertically and horizontally */
+  /* Previously i used this to Center vertically and horizontally,
+  however this broke the right part of the card on desktop(height mismatch between left and right side), likely caused by the way flexbox handles paddings and margins. I switched my method of centering here to body due to this. */
   .product-container {
     display: flex;
     justify-content: center;
